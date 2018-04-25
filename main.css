@@ -1,0 +1,894 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+*{
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   FONT-FACE
+   ========================================================================== */
+
+@font-face {
+    font-family: 'affogatobold';
+    src: url('../fonts/affogato-bold-webfont.woff2') format('woff2'),
+         url('../fonts/affogato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'affogatolight';
+    src: url('../fonts/affogato-light-webfont.woff2') format('woff2'),
+         url('../fonts/affogato-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'affogatomedium';
+    src: url('../fonts/affogato-medium-webfont.woff2') format('woff2'),
+         url('../fonts/affogato-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'affogatoregular';
+    src: url('../fonts/affogato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/affogato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amsdamregular';
+    src: url('../fonts/amsdam_regular-webfont.woff2') format('woff2'),
+         url('../fonts/amsdam_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* ==========================================================================
+   Primeira Pagina
+   ========================================================================== */
+
+body{
+    background: url("../img/background2-1.jpg") no-repeat fixed;
+    background-size: 100%;
+}
+
+section{
+    height: 100vh;
+    min-height: 603px;
+}
+
+#main-nav ul{
+    list-style: none;
+    font-family: 'affogatoregular';
+    font-size: 40px;
+    font-weight: bold;
+    float: right;
+    padding-left: 0;
+    width: 259px;
+}
+
+#main-nav ul li{
+    display: block;
+    color: white;
+    text-align: left;
+}
+
+
+#img-logo{
+    width: 324px;
+    transition: 2s;
+    margin-top: 30px;
+}
+
+#front-page{
+    clear: both;
+    width: 50%;
+    text-align: center;
+    color: white;
+    padding-top: 180px;
+    transition: 1s ease-out;
+    opacity: 0;
+    margin: 0 auto;
+}
+
+#front-page span{
+    border-bottom: solid 0px #32bfab;
+    visibility: hidden;
+    transition: 2s;
+}
+
+#front-page p{
+    font-family: 'affogatoregular';
+    font-size: 20px;
+}
+
+/*#hr-nav{
+    position: absolute;
+    /*width: 60px;
+    width: 1px;
+    height: 3px;
+    background-color: #32bfab;
+    border: none;
+    top: 24px;
+    margin-left: 17px;
+    visibility: hidden;
+    transition: .5s;
+}*/
+
+#hr-nav1{
+    margin-top: 0px;
+    width: 100px;
+    margin-bottom: 0px;
+}
+
+#front-page li{
+    margin-bottom: 0px;
+}
+
+#front-left{
+    float: left;
+    margin-left: -73px;
+}
+
+#front-right{
+    float: right;
+}
+
+.icon-nav{
+    width: 40px;
+    margin-left: -50px;
+    visibility: hidden;
+    transition: .5s;
+    opacity: 0;
+}
+
+.icon-blog{
+    width: 30px;
+}
+
+/* ==========================================================================
+   WORKS
+   ========================================================================== */
+
+#container-works{
+    height: auto;
+    width: 100%;
+    background-color: black;
+}
+
+#barra-titulo{
+    width: 100%;
+    text-align: center;
+    color: white;
+    height: 50px;
+    background-color: #32bfab;
+    font-family: 'affogatobold';
+    font-weight: bold;
+    margin-top: -22px;
+}
+
+.left-work{
+    width: 50%;
+    background-color: #ecf0f1;
+    float: left;
+    text-align: center;
+    height: 550px;
+    position: relative;
+    border-bottom: solid #32bfab;
+}
+
+.left-work h2{
+    font-family: 'affogatomedium';
+    font-size: 45px;
+    text-decoration: underline;
+    text-decoration-color: #32bfab;
+    -moz-text-decoration-color: #32bfab;
+     color: #36293b;
+}
+
+.right-work{
+    width: 50%;
+    background-color: blue;
+    float: right;
+    height: 550px;
+    background-color: #36293b;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 30px;
+    font-family: 'affogatolight';
+    font-size: 13px;
+    position: relative;
+    z-index: 2;
+    color: white;
+    border-bottom: solid #32bfab;
+}
+
+.right-work h3{
+    font-family: 'affogatomedium';
+    font-size: 16px;
+    margin-bottom: -10px;
+}
+
+.right-work a{
+    float: right;
+    text-decoration: none;
+    color: white;
+}
+
+.left-work img#work-img{
+    width: 80%;
+}
+
+img#work-img2, #work2-img2{
+    width: 80%;
+    position: absolute;
+    top: 10;
+    left: 0;
+    /*margin-left: 10%;*/
+    margin-left: -60%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+
+img#work-img1, #work2-img1{
+    width: 80%;
+    position: absolute;
+    top: 10;
+    left: 0;
+    margin-left: 10%;
+    transition: 1s;
+}
+
+.texto-works{
+    width: 90%;
+}
+
+.left-invertido{
+    float: right;
+}
+
+.right-invertido{
+    float: left;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.seta-direita-work1, .seta-direita-work2{
+    cursor: pointer;
+    float: right;
+    z-index: 3;
+    position: relative;
+}
+
+.seta-esquerda-work1, .seta-esquerda-work2{
+    cursor: pointer;
+    float: left;
+    z-index: 3;
+    position: relative;
+}
+
+#container-setas{
+    width: 100%;
+    padding: 20px;
+    margin-top: 15%;
+    position: absolute;
+}
+
+#container-bolinha{
+    display: block;
+    margin-top: 55%;
+    width: 36px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container-bolinha #bolinha-1, #container-bolinha #bolinha-2, #bolinha-work2-1, #bolinha-work2-2{
+    background: url('../img/bolinha-ativada.png') no-repeat;
+    float: left;
+    width: 12px;
+    margin: 0 3px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.logo-kuziq{
+    width: 150px;
+    margin-top: 37%;
+    position: absolute;
+    left: 12%;
+}
+
+.kuziq-mobile{
+    position: absolute;
+    z-index: 2;
+    width: 25%;
+    margin-top: 25%;
+    left: 65%;
+    transition: 1s;
+}
+
+img.kuziq-mobile2{
+    width: 25%;
+    position: absolute;
+    margin-top: 25%;
+    left: 0;
+    /*margin-left: 10%;*/
+    margin-left: -22%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+
+#container-bolinha-right #bolinha-1, #container-bolinha-right #bolinha-2{
+    background: url("../img/bolinha-ativada.png") no-repeat;
+    display: block;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+#container-bolinha-right{
+    display: block;
+    margin-top: 51%;
+    width: 36px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==========================================================================
+   ABOUT
+   ========================================================================== */
+
+   #container-about{
+        background-color: #36293b;
+        color: white;
+   }
+
+   #texto-about{
+        padding-left: 10%;
+        padding-right: 10%;
+        font-family: 'affogatolight';
+        font-size: 19px;
+        text-align: center;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        max-width: 936px;
+   }
+
+   #texto-about .p-centralizado{
+        text-align: center;
+   }
+
+   #texto-about h3{
+        font-family: 'affogatoregular';
+        margin-bottom: -20px;
+        font-size: 29px;
+   }
+
+   #texto-about p.p-about{
+        text-indent: 30px;
+        margin-bottom: -10px;
+        text-align: left;
+   }
+
+   #texto-about img.profile-photo{
+        margin-top: 10px;
+        margin-bottom: -10px;
+   }
+
+   /* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+footer{
+    background-color: #32bfab;
+}
+
+input, textarea{
+    display: block;
+}
+
+#p-contact{
+    text-align: center;
+    color: white;
+    font-family: 'affogatolight';
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+
+#container-footer{
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#container-footer p {
+    text-align: center;
+    color: white;
+    font-family: 'affogatoregular';
+}
+
+#container-footer form{
+    margin: 0 auto;
+    width: 290px;
+}
+
+#container-footer label{
+    font-family: 'affogatomedium';
+    font-size: 15px;
+    color: white;
+}
+
+#container-footer input, #container-footer textarea{
+    background-color: #fdfbec;
+    border: solid 1px #9d9d9d;
+    border-radius: 3px;
+}
+
+
+#container-footer input{
+    width: 290px;
+}
+
+#container-footer textarea{
+    width: 290px;
+    height: 115px;
+}
+
+#container-footer input[type=submit]{
+    width: 125px;
+    height: 30px;
+    margin-top: 17px;
+    background-color: #b67dcd;
+    color: white;
+    font-family: 'affogatomedium';
+    font-size: 13px;
+    border-radius: 3px;
+    border-bottom: solid 4px #9b6aaf;
+    border-right: solid 3px #9b6aaf;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container-footer input[type=submit]:hover{
+    border-bottom: none;
+    border-right: none;
+}
+
+
+#footer-left{
+    float: left;
+}
+
+#footer-right{
+    float: right;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 70%;
+}
+
+#container-contatos{
+    text-align: center;
+}
+
+#container-contatos a img{
+    margin-top: 15px;
+}
+
+#footer-right ul{
+    text-align: left;
+    list-style: none;
+    font-family: 'affogatoregular';
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 0;
+    margin-left: 29px;
+}
+/*
+#footer-right ul{
+    list-style: none;
+    font-family: 'affogatoregular';
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+    margin-right: 195px;
+}
+
+#footer-right ul li{
+    display: inline-block;
+    padding-left: 13px;
+    color: white;
+}
+
+#footer-right nav{
+    text-align: right;
+    position: absolute;
+    right: 43px;
+}*/
+
+#footer-bottom{
+    clear: both;
+    text-align: center;
+    width: 100%;
+    background-color: #140f16;
+    margin-top: 10px;
+    color: white;
+    font-family: 'affogatolight';
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media only screen and (max-width: 1081px) {
+    #main-nav ul{
+        font-size: 35px;
+        width: 100%;
+    }
+
+    #main-nav ul img{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 939px) {
+    #main-nav ul{
+        font-size: 23px;
+    }
+
+    body{
+        background: url("../img/background2-1.jpg") no-repeat;
+        background-size: 1000px;
+    }
+}
+
+@media only screen and (max-width: 851px) {
+    #main-nav ul li{
+        display: block;
+        float: left;
+        margin: 0 auto;
+        margin-left: 10px;
+    }
+
+    #main-nav ul{
+        position: absolute;
+        width: 100vw;
+        left: 0;
+        top: 30px;
+        text-align: center;
+        padding: 0 28%;
+    }
+
+    #main-nav hr{
+        display: none;
+    }
+
+    #front-left{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 776px) {
+    #main-nav ul{
+        padding: 0 25%;
+    }
+}
+
+
+@media only screen and (max-width: 667px) {
+    #main-nav ul{
+        width: 10px;
+        float: left;
+        padding: 0 5%;
+    }
+
+}
+
+@media only screen and (max-width: 643px) {
+    #img-logo{
+        width: 200px;
+        transition: 2s;
+        margin-top: 30px;
+    }
+
+    #front-page{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .left-work{
+        width: 100%;
+        height: auto;
+        padding-bottom: 10%;
+    }
+
+    .right-work{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .logo-kuziq{
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 371px) {
+    #container-bolinha{
+        margin-top: 60%;
+    }
+}
+
+@media only screen and (min-width: 1455px) {
+    .right-work{
+        height: 650px;
+    }
+
+    .left-work{
+        height: 650px;
+    }
+}
+
+@media only screen and (min-width: 1764px) {
+    .right-work{
+        height: 750px;
+    }
+
+    .left-work{
+        height: 750px;
+    }
+}
+
+@media only screen and (max-width: 983px){
+    #footer-right ul{
+       left: 100%;
+    }
+    #container-footer{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 644px) {
+    #footer-right ul{
+        margin-right: 10%;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    #footer-right ul{
+       display: none;
+    }
+    #container-contatos{
+        display: block;
+        width: 100%;
+        margin-top: -40px;
+    }
+    #footer-right{
+        left: 42%;
+        top: 30px;
+    }
+
+    #container-footer p{
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 429px) {
+    #footer-right ul{
+        font-size: 16px;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 372px) {
+    #footer-right nav{
+        width: 100%;
+    }
+
+    #footer-right ul{
+        text-align: center;
+        width: 100%;
+        margin-top: 60px;
+    }
+}
+
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

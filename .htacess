@@ -1,0 +1,8 @@
+RewriteEngine on
+# not rewrite css, js and images
+IndexIgnore *
+# RewriteCond %{REQUEST_URI} !\.(?:css|js|jpe?g|gif|png)$ [NC]
+RewriteRule ^(.+)-(.+)$ texto.php?id=$1&titulo=$2
+
+# rewrite css, js and images, from root
+# RewriteRule ^musicos/[^/]+/(.+)$ $1  [L]

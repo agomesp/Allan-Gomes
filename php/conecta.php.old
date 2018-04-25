@@ -1,0 +1,2 @@
+<?php
+$conexao = mysqli_connect("mysql04-farm68.kinghost.net", "allangomes", "15963012a", "allangomes");
